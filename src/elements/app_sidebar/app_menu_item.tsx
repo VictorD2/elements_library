@@ -15,7 +15,7 @@ type AppMenuItemProps = {
   bgColor?: string
 }
 
-export const AppMenuItem = ({ route, remixicon, bgColor = 'bg-primary', textColor = 'text-white', width = 'w-full', height = 'h-10' }: AppMenuItemProps) => {
+export const AppMenuItem = ({ route, remixicon = 'ri-home-2-line', bgColor = 'bg-primary', textColor = 'text-white', width = 'w-full', height = 'h-10' }: AppMenuItemProps) => {
   const router = useRouter()
   const classNames = (...classes: any): string => {
     return classes.filter(Boolean).join(' ')
@@ -24,12 +24,11 @@ export const AppMenuItem = ({ route, remixicon, bgColor = 'bg-primary', textColo
   const setClassNames = (): string => {
     return classNames(
       textColor,
-      bgColor,
       width,
       height,
-      router.pathname === route.link ? 'bg-secondary' : '',
+      router.pathname === route.link ? 'bg-secondary' : bgColor,
       'rounded-lg uppercase hover:contrast-150 duration-500 ',
-      'flex flex-row items-center justify-center'
+      'flex flex-row items-center justify-start pl-3 gap-2'
     )
   }
 

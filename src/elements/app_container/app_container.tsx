@@ -17,7 +17,7 @@ export const AppContainer = ({
   alignItems,
   className,
   width = 'w-full',
-  height = 'h-10',
+  height = '',
   display = 'flex',
   bgColor = 'bg-white',
   children,

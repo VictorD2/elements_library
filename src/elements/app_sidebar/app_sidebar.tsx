@@ -18,7 +18,7 @@ export const AppSidebar = ({ routes, width = 'w-20', bgColor = 'bg-primary', cla
     return classes.filter(Boolean).join(' ')
   }
   const setClassNames = (): string => {
-    return classNames(width, className, bgColor, 'h-screen', 'sticky', 'scrollbar-thin scrollbar-thumb-secondary scrollbar-track-transparent')
+    return classNames(width, className, bgColor, 'h-screen', 'sticky', 'top-0', 'scrollbar-thin scrollbar-thumb-secondary scrollbar-track-transparent')
   }
 
   return (
