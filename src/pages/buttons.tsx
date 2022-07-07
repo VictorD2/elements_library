@@ -1,8 +1,9 @@
-import type { NextPage } from 'next';
-import ButtonsPage from '../components/ButtonsPage';
+import React from 'react'
+import type { NextPage } from 'next'
+import ButtonsPage from '../components/ButtonsPage'
 
 const Buttons: NextPage = () => {
-  return <ButtonsPage />;
-};
+  return <ButtonsPage />
+}
 
-export default Buttons;
+export default Buttons
