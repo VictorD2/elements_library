@@ -1,1 +1,1 @@
-export { ButtonsPage as default } from "./ButtonsPage";
+export { ButtonsPage as default } from './ButtonsPage';

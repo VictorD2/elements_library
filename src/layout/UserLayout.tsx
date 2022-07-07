@@ -1,4 +1,4 @@
-import AppNavbar from "../elements/app_navbar";
+import AppNavbar from '../elements/app_navbar';
 
 interface Route {
   name: string;
@@ -6,13 +6,14 @@ interface Route {
   childs?: Route[];
 }
 
-const routes = [
+const routes: Route[] = [
   {
-    name: "Buttons",
-    link: "/buttons",
+    name: 'Buttons',
+    link: '/buttons',
   },
 ];
 
+// eslint-disable-next-line no-undef
 const UserLayout = ({ children }: { children: JSX.Element }) => {
   return (
     <>
